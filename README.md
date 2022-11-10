@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet) 
 
-# Portfolio: setup and mobile finish
+# Portfolio: Desktop Version
 
 I've created an HTML template and styling files in order to built a responsive portfolio for mobile version and desktop version..
 
