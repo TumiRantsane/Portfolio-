@@ -33,7 +33,7 @@ p {
 }
 
 .clr-n-900 {
-  color: #000;
+  color: #344563;
 }
 
 .clr-n-800 {
@@ -297,6 +297,7 @@ p {
 }
 
 .works__card__topics {
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -305,7 +306,7 @@ p {
 
 .works__card__topics__text {
   list-style: none;
-  padding: 0;
+  padding: 4px 12px;
   border-radius: 8px;
 }
 
@@ -340,7 +341,7 @@ p {
 }
 
 .about__icons {
-  margin: 1.3rem 0 1rem;
+  margin: 1.2rem 1rem;
 }
 
 .about__icons__ul {
@@ -430,6 +431,10 @@ p {
   align-items: center;
 }
 
+form {
+  width: 70%;
+}
+
 .contact__title {
   color: #fff;
   text-align: center;
@@ -472,7 +477,7 @@ p {
 
 @media (min-width: 992px) {
   .navbar {
-    padding: 1.5rem 8rem;
+    padding: 10%;
   }
 
   .navbar__menu {
@@ -508,11 +513,10 @@ p {
   }
 
   .works__cards {
-    padding: 5rem;
+    padding: 10%;
   }
 
   .works__card {
-    max-width: 1104px;
     -moz-column-gap: 46px;
     column-gap: 46px;
     padding: 1.5rem;
@@ -537,7 +541,7 @@ p {
   }
 
   .about {
-    padding: 6rem;
+    padding: 10%;
     flex-direction: row;
     -moz-column-gap: 37px;
     column-gap: 37px;
