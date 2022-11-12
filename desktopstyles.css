@@ -318,11 +318,12 @@ p {
 }
 
 .about {
-  padding: 7.125rem 1.5rem;
-  border-top-right-radius: 5rem;
+  padding-top: 24px;
+  gap: 24px;
+  border-top-right-radius: 80px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .about__title {
@@ -537,7 +538,7 @@ p {
   .about {
     padding: 6rem;
     flex-direction: row;
-    -moz-column-gap: 37px;
+    gap: 50px;
     column-gap: 37px;
     border-top-right-radius: 8rem;
   }
