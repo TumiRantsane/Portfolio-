@@ -304,7 +304,8 @@ p {
 }
 
 .works__card__topics__text {
-  padding: 4px 12px;
+  list-style: none;
+  padding: 0;
   border-radius: 8px;
 }
 
@@ -318,12 +319,12 @@ p {
 }
 
 .about {
-  padding-top: 24px;
+  padding: 10%;
   gap: 24px;
   border-top-right-radius: 80px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .about__title {
@@ -538,13 +539,13 @@ p {
   .about {
     padding: 6rem;
     flex-direction: row;
-    gap: 50px;
+    -moz-column-gap: 37px;
     column-gap: 37px;
     border-top-right-radius: 8rem;
   }
 
   .about__myself {
-    flex-basis: 25rem;
+    flex-basis: 40%;
   }
 
   .about__lang__bottom {
@@ -560,7 +561,9 @@ p {
   }
 
   .about__tools {
-    flex-basis: 25rem;
+    flex-basis: 60%;
+    margin: 0;
+    padding: 0;
   }
 
   .contact::before {
@@ -591,65 +594,5 @@ p {
 
   .contact__container form li:last-child {
     text-align: center;
-  }
-}
-
-@media (min-width: 1440px) {
-  .fz-40 {
-    font-size: 48px;
-  }
-
-  .fz-16 {
-    font-size: 20px;
-  }
-
-  .fz-15 {
-    font-size: 16px;
-  }
-
-  .fz-13 {
-    font-size: 18px;
-  }
-
-  .lh-52 {
-    line-height: 60px;
-  }
-
-  .lh-24 {
-    line-height: 28px;
-  }
-
-  .navbar {
-    padding: 1.5rem 9.68rem;
-  }
-
-  .head {
-    padding: 17rem 16.25rem;
-    padding-right: 18vw;
-  }
-
-  .works__cards {
-    padding: 8.8rem;
-  }
-
-  .about {
-    padding: 7.125rem;
-  }
-
-  .about__myself {
-    flex-basis: 37rem;
-  }
-
-  .about__tools {
-    flex-basis: 38rem;
-  }
-
-  .contact::before {
-    padding: 3.5rem;
-  }
-
-  .contact {
-    padding: 8.875rem;
-    padding-bottom: 7.9rem;
   }
 }
