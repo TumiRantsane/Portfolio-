@@ -151,9 +151,9 @@ p {
 }
 
 .btn {
-  -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
-  transition: background 0.8s ease-in-out, color 0.8s ease-in-out;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  transition: background 1.5s ease-in-out, color 1.5s ease-in-out;
 }
 
 .btn:hover {
