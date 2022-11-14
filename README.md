@@ -28,6 +28,10 @@ To get a local copy up and running follow these simple example steps.
 2. Navigate to the location of the folder in your machine:
 **``you@your-Pc-name:~$ cd <folder>``**
 
+## Deployment
+
+https://tumirantsane.github.io/Portfolio-/
+
 ## Author
 
 👤 **Itumeleng Rantsane**
