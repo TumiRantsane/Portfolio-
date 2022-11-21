@@ -205,10 +205,8 @@ p {
 .navbar__menu {
   display: none;
 }
-
-
 .head::before {
-  content: "";
+  content: " "; 
   position: absolute;
   background-color: #fff;
   background-image: url("../images/shapes.png");
@@ -481,7 +479,6 @@ form {
 .navbar__menu__link {
   transition: color 0.5s ease-in-out, font-size 0.5s ease-in-out;
 }
-
 @media (min-width: 992px) {
   .navbar__menu__link:hover {
     color: #396df2;
@@ -491,7 +488,6 @@ form {
 .head__icons__link img {
   transition: transform 0.5s;
 }
-
 .about__icons__link img {
   transition: transform 0.5s;
 }
@@ -512,7 +508,6 @@ form {
     transform: scale(1) rotate(720deg) translateX(0);
   }
 }
-
 @media (max-width: 992px) {
   .navbar__menu {
     visibility: hidden;
@@ -552,11 +547,9 @@ form {
   left: 0;
   transition: left 0.8s, visibility 0.8s, opacity 0.4s;
 }
-
 .blockover {
   overflow-y: hidden;
 }
-
 @media (min-width: 992px) {
   .navbar {
     padding: 10%;
