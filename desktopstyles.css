@@ -197,7 +197,8 @@ p {
   animation-iteration-count: 1;
 }
 
-.navbar__hamb, 
+.navbar__hamb,
+ 
 .navbar__close {
   cursor: pointer;
   z-index: 100;
@@ -206,7 +207,6 @@ p {
 .navbar__menu {
   display: none;
 }
-
 
 .head::before {
   content: "";
@@ -480,6 +480,7 @@ form {
   cursor: pointer;
   margin: 18px 0;
 }
+
 .navbar__menu__link {
   transition: color 0.5s ease-in-out, font-size 0.5s ease-in-out;
 }
@@ -490,6 +491,7 @@ form {
     font-size: 17px;
   }
 }
+
 .head__icons__link img {
   transition: transform 0.5s;
 }
@@ -510,6 +512,7 @@ form {
   50% {
     transform: scale(1.5) rotate(360deg) translateX(-50%);
   }
+  
   to {
     transform: scale(1) rotate(720deg) translateX(0);
   }
@@ -530,12 +533,15 @@ form {
     padding: 8rem 2rem;
     z-index: 50;
   }
+
   .navbar__menu__ul {
     flex-direction: column;
   }
+
   .navbar__menu__li {
     margin-bottom: 40px;
   }
+
   .navbar__menu__li a {
     font-size: 32px;
     font-weight: 600;
@@ -543,6 +549,7 @@ form {
     color: #fff;
     transition: color 1s;
   }
+
   .navbar__menu__li a:hover {
     color: #000;
   }
