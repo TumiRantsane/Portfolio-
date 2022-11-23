@@ -196,6 +196,7 @@ p {
   animation-duration: 1.5s;
   animation-iteration-count: 1;
 }
+
 .navbar__hamb,
 .navbar__close {
   cursor: pointer;
