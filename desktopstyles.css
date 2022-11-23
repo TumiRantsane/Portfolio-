@@ -198,7 +198,6 @@ p {
 }
 
 .navbar__hamb,
- 
 .navbar__close {
   cursor: pointer;
   z-index: 100;
@@ -512,7 +511,7 @@ form {
   50% {
     transform: scale(1.5) rotate(360deg) translateX(-50%);
   }
-  
+
   to {
     transform: scale(1) rotate(720deg) translateX(0);
   }
