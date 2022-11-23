@@ -198,7 +198,6 @@ p {
 }
 
 .navbar__hamb,
-
 .navbar__close {
   cursor: pointer;
   z-index: 100;
