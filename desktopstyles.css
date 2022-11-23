@@ -198,7 +198,7 @@ p {
 }
 
 .navbar__hamb {
-    cursor: pointer;
+  cursor: pointer;
   z-index: 100;
 }
 
