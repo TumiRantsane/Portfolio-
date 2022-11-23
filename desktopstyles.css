@@ -197,7 +197,8 @@ p {
   animation-iteration-count: 1;
 }
 
-.navbar__hamb, .navbar__close {
+.navbar__hamb, 
+.navbar__close {
   cursor: pointer;
   z-index: 100;
 }
