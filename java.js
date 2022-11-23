@@ -1,32 +1,26 @@
-const menuIconMobile = document.querySelector('.navbar__hamb');
+const hamburgerIcon = document.querySelector('.navbar__hamb');
 const menu = document.querySelector('.navbar__menu');
 const viewport = document.querySelector('body');
-const menuLinks = document.querySelectorAll('.navbar__menu__link');
+const links = document.querySelectorAll('.navbar__menu__link');
+let states = false ;
 
-function isActiveClassExisted(element) {
-  return element.classList.contains('active');
-}
-
-function refreshIcon() {
-  if (isActiveClassExisted(menu)) {
-    menuIconMobile.setAttribute('src', 'images/hamburguer-close.png');
-  } else {
-    menuIconMobile.setAttribute('src', 'images/hamburguer.png');
-  }
-}
-function openMenu() {
+function open() {
   menu.classList.toggle('active');
   viewport.classList.add('blockover');
-  refreshIcon();
+  hamburgerIcon.setAttribute('src', 'images/hamburguer-close.png');
+  
 }
 
-function closeMenu() {
+function close() {
+  hamburgerIcon.setAttribute('src', 'images/hamburger.png')
   menu.classList.remove('active');
   viewport.classList.remove('blockover');
-  refreshIcon();
+  console.log(hamburgerIcon.getAttribute('src'))
 }
 
-menuIconMobile.addEventListener('click', openMenu);
-menuLinks.forEach((menuLink) => {
-  menuLink.addEventListener('click', closeMenu);
-});
+hamburgerIcon.addEventListener('click', open);
+
+for (let removedMenu of links){
+  removedMenu.addEventListener('click' , close);
+} 
+
