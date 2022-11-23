@@ -10,10 +10,10 @@ function isActiveClassExisted(element) {
 function refreshIcon() {
   if (isActiveClassExisted(menu)) {
     menuIconMobile.setAttribute('src', 'images/hamburguer-close.png');
-    document.querySelector('.head').style.filter='blur(5px)';
+    document.querySelector('.head').style.filter = 'blur(5px)';
   } else {
     menuIconMobile.setAttribute('src', 'images/hamburger.png');
-    document.querySelector('.head').style.filter='blur(0px)';
+    document.querySelector('.head').style.filter = 'blur(0px)';
   }
 }
 function openMenu() {
@@ -32,4 +32,3 @@ menuIconMobile.addEventListener('click', openMenu);
 menuLinks.forEach((menuLink) => {
   menuLink.addEventListener('click', closeMenu);
 });
-
