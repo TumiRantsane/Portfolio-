@@ -1,5 +1,5 @@
 const menuIconMobile = document.querySelector('.navbar__hamb');
-const menu = document.querySelector'.navbar__menu');
+const menu = document.querySelector('.navbar__menu');
 const viewport = document.querySelector('body');
 const menuLinks = document.querySelectorAll('.navbar__menu__link');
 
