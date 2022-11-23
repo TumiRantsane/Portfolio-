@@ -10,14 +10,13 @@ function open() {
 }
 
 function close() {
-  hamburgerIcon.setAttribute('src', 'images/hamburger.png')
+  hamburgerIcon.setAttribute('src', 'images/hamburger.png');
   menu.classList.remove('active');
   viewport.classList.remove('blockover');
 }
 
 hamburgerIcon.addEventListener('click', open);
 
-for (let removedMenu of links){
-  removedMenu.addEventListener('click' , close);
-} 
-
+for (let removedMenu of links) {
+  removedMenu.addEventListener('click', close);
+}
