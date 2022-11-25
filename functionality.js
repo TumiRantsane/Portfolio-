@@ -1,12 +1,12 @@
 import {
   menuIconMobile, menuLinks, openMenu, closeMenu,
-} from './.java.js';
+} from './java.js';
 
-import { createModal, projects } from './.popupwindow.js';
+import { createModal, projects } from './popupwindow.js';
 
 import {
   isItUppercase, email, form, error,
-} from './.validation.js';
+} from './validation.js';
 
 menuIconMobile.addEventListener('click', openMenu);
 menuLinks.forEach((menuLink) => {

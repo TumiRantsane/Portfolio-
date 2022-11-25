@@ -1,43 +1,22 @@
-export const email = document.querySelector('.contact__email');
-export const form = document.querySelector('#form');
-export const error = document.querySelector('.error');
-export function isItUppercase(value) {
-  if (value.match(/^[a-z@.0-9-_]*$/)) {
-    return true;
-  }
-  return false;
-}
-const menuIconMobile = document.querySelector('.navbar__hamb');
+export const menuIconMobile = document.querySelector('.navbar__hamb');
 const menu = document.querySelector('.navbar__menu');
-const viewport = document.querySelector('body');
-const menuLinks = document.querySelectorAll('.navbar__menu__link');
+export const menuLinks = document.querySelectorAll('.navbar__menu__link');
 
-function isActiveClassExisted(element) {
-  return element.classList.contains('active');
-}
+const isActiveClassExisted = (element) => element.classList.contains('active');
 
-function refreshIcon() {
+const refreshIcon = () => {
   if (isActiveClassExisted(menu)) {
     menuIconMobile.setAttribute('src', 'images/hamburguer-close.png');
-    document.querySelector('.head').style.filter = 'blur(5px)';
   } else {
-    menuIconMobile.setAttribute('src', 'images/hamburger.png');
-    document.querySelector('.head').style.filter = 'blur(0px)';
+    menuIconMobile.setAttribute('src', 'images/hamburguer.png');
   }
-}
-function openMenu() {
+};
+export const openMenu = () => {
   menu.classList.toggle('active');
-  viewport.classList.add('blockover');
   refreshIcon();
-}
+};
 
-function closeMenu() {
+export const closeMenu = () => {
   menu.classList.remove('active');
-  viewport.classList.remove('blockover');
   refreshIcon();
-}
-
-menuIconMobile.addEventListener('click', openMenu);
-menuLinks.forEach((menuLink) => {
-  menuLink.addEventListener('click', closeMenu);
-});
+};
