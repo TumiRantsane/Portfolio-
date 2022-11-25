@@ -8,10 +8,6 @@ import {
   isItUppercase, email, form, error,
 } from './validation.js';
 
-import {
-  storageAvailable,
-} from './localstorage.js';
-
 menuIconMobile.addEventListener('click', openMenu);
 menuLinks.forEach((menuLink) => {
   menuLink.addEventListener('click', closeMenu);
@@ -115,7 +111,7 @@ form.addEventListener('submit', (e) => {
     email.style.border = '3px solid red';
     error.textContent = 'X   Email should be in lowercase';
   }
-})
+}),
 
 if (storageAvailable('localStorage')) {
   const setFormValues = () => {
