@@ -116,7 +116,6 @@ form.addEventListener('submit', (e) => {
     error.textContent = 'X   Email should be in lowercase';
   }
 })
-});
 
 if (storageAvailable('localStorage')) {
   const setFormValues = () => {
