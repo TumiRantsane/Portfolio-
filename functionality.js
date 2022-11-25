@@ -4,10 +4,13 @@ import {
 
 import { createModal, projects } from './popupwindow.js';
 
- form-validation
 import {
   isItUppercase, email, form, error,
 } from './validation.js';
+
+import {
+  storageAvailable,
+} from './localstorage.js';
 
 menuIconMobile.addEventListener('click', openMenu);
 menuLinks.forEach((menuLink) => {
@@ -16,7 +19,6 @@ menuLinks.forEach((menuLink) => {
 
 document.addEventListener('DOMContentLoaded', () => {
   createModal();
-  form-validation
 
   const buttonsProject = document.querySelectorAll('.works__card button');
   const closeIcon = document.querySelector('.closeModal');
@@ -114,3 +116,44 @@ form.addEventListener('submit', (e) => {
     error.textContent = 'X   Email should be in lowercase';
   }
 })
+});
+
+if (storageAvailable('localStorage')) {
+  const setFormValues = () => {
+    const formData = {
+      name: form.contact_name.value,
+      email: form.contact_email.value,
+      message: form.contact_message.value,
+    };
+
+    localStorage.setItem('formData', JSON.stringify(formData));
+  };
+
+  form.contact_name.addEventListener('change', setFormValues);
+  form.contact_email.addEventListener('change', setFormValues);
+  form.contact_message.addEventListener('change', setFormValues);
+
+  const checkLocal = () => {
+    let name = '';
+    let email = '';
+    let message = '';
+
+    if (JSON.parse(localStorage.getItem('formData')) === null) {
+      name = '';
+      email = '';
+      message = '';
+    } else {
+      ({ name, email, message } = JSON.parse(localStorage.getItem('formData')));
+    }
+
+    if (name !== 'empty' || email !== 'empty' || message !== 'empty') {
+      form.contact_name.value = name;
+      form.contact_email.value = email;
+      form.contact_message.value = message;
+    }
+  };
+
+  document.addEventListener('DOMContentLoaded', () => {
+    checkLocal();
+  });
+}
