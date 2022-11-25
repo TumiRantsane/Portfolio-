@@ -811,7 +811,7 @@ form {
   }
 
   .modal__dsc__second {
-  flex-basis: 40%;
+    flex-basis: 40%;
   }
 }
 

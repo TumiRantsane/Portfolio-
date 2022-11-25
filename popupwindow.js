@@ -94,6 +94,6 @@ export function createModal() {
     </li>
     </ul>
     </section>
-    </div>`
+    </div>`,
   );
 }
