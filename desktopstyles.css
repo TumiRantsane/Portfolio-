@@ -159,8 +159,6 @@ body {
   form-validation
   animation-duration: 1.5s;
   transition: background 1.5s ease-in-out, color 1.5s ease-in-out;
-  animation-duration: 0.8s;
-  transition: background 0.8s ease-in-out, color 0.8s ease-in-out
 }
 
 .btn:hover {
