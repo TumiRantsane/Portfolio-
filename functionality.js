@@ -1,6 +1,6 @@
 import {
   menuIconMobile, menuLinks, openMenu, closeMenu,
-} from ""./.java.js";
+} from "./.java.js";
 
 import { createModal, projects } from "./.popupwindow.js";
 
