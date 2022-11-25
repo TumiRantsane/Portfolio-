@@ -1,5 +1,5 @@
-import { 
-  menuIconMobile, menuLinks, openMenu, closeMenu 
+import {
+  menuIconMobile, menuLinks, openMenu, closeMenu,
 } from './java.js';
 
 import { createModal, projects } from './popupwindow.js';
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   buttonsProject.forEach((button) => {
     button.addEventListener('click', () => {
-      if (button.id === "0") {
+      if (button.id === '0') {
         projectName.textContent = `${projects[button.id].name}`;
         projectFeature.textContent = `${projects[button.id].feature}`;
         projectBack.textContent = `${projects[button.id].background}`;
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
         projectFeature.textContent = `${projects[button.id].feature}`;
         projectBack.textContent = `${projects[button.id].background}`;
         projectYear.textContent = `${projects[button.id].year}`;
-        projectImage.setAttribute("src", `${projects[button.id].image}`);
+        projectImage.setAttribute('src', `${projects[button.id].image}`);
         projectDescription.textContent = `${projects[button.id].description}`;
         projectTool1.textContent = `${projects[button.id].tool1}`;
         projectTool2.textContent = `${projects[button.id].tool2}`;
