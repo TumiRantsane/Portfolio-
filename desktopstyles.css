@@ -190,7 +190,7 @@ body {
 }
 
 .navbar__link {
-  color: #2230D2;
+  color: #2230d2;
   animation-name: rotate-logo;
   animation-duration: 1.5s;
   animation-iteration-count: 1;
@@ -792,8 +792,6 @@ form {
     text-align: center;
   }
 
-  }
-
   .modal {
     width: 70%;
   }
@@ -812,13 +810,10 @@ form {
     gap: 2rem;
   }
 
-  .modal__dsc__first {
-    flex-basis: 60%;
-  }
-
   .modal__dsc__second {
-    flex-basis: 40%;
+  flex-basis: 40%;
   }
+}
 
 @media (min-width: 1440px) {
   .fz-40 {

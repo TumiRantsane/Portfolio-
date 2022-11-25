@@ -1,8 +1,8 @@
 import {
   menuIconMobile, menuLinks, openMenu, closeMenu,
-} from './java.js';
+} from '.java.js';
 
-import { createModal, projects } from './popupwindow.js';
+import { createModal, projects } from '.popupwindow.js';
 
 import {
   isItUppercase, email, form, error,
@@ -102,13 +102,13 @@ document.addEventListener('DOMContentLoaded', () => {
   closeIcon.addEventListener('click', closeModal);
 });
 
-form.addEventListener("submit", (e) => {
+form.addEventListener('submit', (e) => {
   if (isItUppercase(email.value)) {
-    error.textContent = "";
-    email.style.border = "1px solid #cfd8dc";
+    error.textContent = '';
+    email.style.border = '1px solid #cfd8dc';
   } else {
     e.preventDefault();
-    email.style.border = "3px solid red";
-    error.textContent = "X   Email should be in lowercase";
+    email.style.border = '3px solid red';
+    error.textContent = 'X   Email should be in lowercase';
   }
 });
