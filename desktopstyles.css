@@ -156,8 +156,11 @@ body {
 }
 
 .btn {
+  form-validation
   animation-duration: 1.5s;
   transition: background 1.5s ease-in-out, color 1.5s ease-in-out;
+  animation-duration: 0.8s;
+  transition: background 0.8s ease-in-out, color 0.8s ease-in-out
 }
 
 .btn:hover {
@@ -196,21 +199,16 @@ body {
   animation-iteration-count: 1;
 }
 
-.navbar__hamb,
-.navbar__close {
+.navbar__hamb {
   cursor: pointer;
   z-index: 100;
-}
-
-.navbar__menu {
-  display: none;
 }
 
 .head::before {
   content: "";
   position: absolute;
   background-color: #fff;
-  background-image: url("../images/shapes.png");
+  background-image: url("https://raw.githubusercontent.com/ArthurGC/portfolio-microverse/add-set-up-mobile-version--portfolio/images/shapes.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -252,9 +250,6 @@ body {
 
 .head__icons {
   margin: 0.5rem 0;
-}
-
-.head__icons__ul {
   align-items: center;
   justify-content: space-between;
   width: 11rem;
@@ -280,10 +275,6 @@ body {
   width: 100%;
 }
 
-.works__card__img img {
-  width: 100%;
-}
-
 .works__card__subtitle {
   align-items: center;
   column-gap: 2rem;
@@ -300,7 +291,6 @@ body {
 }
 
 .works__card__topics {
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -308,7 +298,6 @@ body {
 }
 
 .works__card__topics__text {
-  list-style: none;
   padding: 4px 12px;
   border-radius: 8px;
 }
@@ -323,12 +312,11 @@ body {
 }
 
 .about {
-  padding: 10%;
-  gap: 24px;
-  border-top-right-radius: 80px;
+  padding: 7.125rem 1.5rem;
+  border-top-right-radius: 5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .about__title {
@@ -343,17 +331,14 @@ body {
   text-transform: uppercase;
 }
 
-.about__icons {
-  margin: 1.2rem 1rem;
-}
-
 .about__icons__ul {
+  margin: 1.3rem 0 1rem;
   align-items: center;
   justify-content: space-between;
   width: 11rem;
 }
 
-.about__btn .btn {
+.about .btn {
   width: 162px;
   height: 48px;
   padding: 12px;
@@ -412,7 +397,7 @@ body {
   content: "";
   position: absolute;
   background-color: #6070ff;
-  background-image: url("../images/contact-form-shapes-mobile.svg");
+  background-image: url("https://raw.githubusercontent.com/ArthurGC/portfolio-microverse/c8dcf1476c30337e684a9325358fe7f2b7410486/images/contact-form-shapes-mobile.svg");
   background-size: contain;
   background-position: right;
   background-origin: content-box;
@@ -434,10 +419,6 @@ body {
   align-items: center;
 }
 
-form {
-  width: 70%;
-}
-
 .contact__title {
   color: #fff;
   text-align: center;
@@ -457,6 +438,11 @@ form {
   margin: 10px 0;
   height: 48px;
   padding: 0 1rem;
+}
+
+.contact__container form li label {
+  display: block;
+  color: #fff;
 }
 
 .contact__container form li textarea {
@@ -623,11 +609,11 @@ form {
   .navbar__menu {
     visibility: hidden;
     opacity: 0;
-    position: absolute;
     width: 100%;
     height: 100vh;
     background: rgba(96, 112, 255, 0.95);
     display: flex;
+    position: fixed;
     top: 0;
     left: 100%;
     transition: left 0.8s, visibility 0.8s, opacity 0.4s;
@@ -658,7 +644,7 @@ form {
 
 .active {
   visibility: visible;
-  opacity: 0.8;
+  opacity: 1;
   left: 0;
   transition: left 0.8s, visibility 0.8s, opacity 0.4s;
 }
@@ -667,9 +653,22 @@ form {
   overflow-y: hidden;
 }
 
+@media (min-width: 570px) {
+  .modal {
+    margin: 3rem 0;
+    width: 70%;
+  }
+}
+
+@media (min-width: 800px) {
+  .modal {
+    width: 60%;
+  }
+}
+
 @media (min-width: 992px) {
   .navbar {
-    padding: 10%;
+    padding: 1.5rem 8rem;
   }
 
   .navbar__menu {
@@ -686,7 +685,7 @@ form {
   }
 
   .head::before {
-    background-image: url("../images/headline-background.svg");
+    background-image: url(../images/desktop/headline-background.svg);
     padding: 6rem;
     border-bottom-left-radius: 8rem;
   }
@@ -705,11 +704,12 @@ form {
   }
 
   .works__cards {
-    padding: 10%;
+    padding: 5rem;
   }
 
   .works__card {
-    -moz-column-gap: 46px;
+    align-items: center;
+    max-width: 1104px;
     column-gap: 46px;
     padding: 1.5rem;
   }
@@ -718,8 +718,8 @@ form {
     padding: 1rem;
   }
 
-  .works__card > * {
-    flex-basis: 50%;
+  .works__card__img {
+    width: 50%;
   }
 
   .works__card:nth-child(1),
@@ -733,20 +733,18 @@ form {
   }
 
   .about {
-    padding: 10%;
+    padding: 6rem;
     flex-direction: row;
-    -moz-column-gap: 37px;
     column-gap: 37px;
     border-top-right-radius: 8rem;
   }
 
   .about__myself {
-    flex-basis: 40%;
+    flex-basis: 25rem;
   }
 
   .about__lang__bottom {
     display: flex;
-    -moz-column-gap: 12px;
     column-gap: 12px;
   }
 
@@ -757,13 +755,11 @@ form {
   }
 
   .about__tools {
-    flex-basis: 60%;
-    margin: 0;
-    padding: 0;
+    flex-basis: 25rem;
   }
 
   .contact::before {
-    background-image: url("../images/contact-form-background.svg");
+    background-image: url(../images/desktop/contact-form-background.svg);
     padding: 1rem;
     border-top-left-radius: 8rem;
   }
@@ -810,6 +806,10 @@ form {
     gap: 2rem;
   }
 
+  .modal__dsc__first {
+    flex-basis: 60%;
+  }
+  
   .modal__dsc__second {
     flex-basis: 40%;
   }
