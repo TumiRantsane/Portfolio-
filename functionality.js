@@ -111,4 +111,4 @@ form.addEventListener('submit', (e) => {
     email.style.border = '3px solid red';
     error.textContent = 'X   Email should be in lowercase';
   }
-}),
+})
