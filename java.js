@@ -21,7 +21,6 @@ export const closeMenu = () => {
   refreshIcon();
 };
 
-
 const formButton = document.querySelector('.form-button');
 
 formButton.addEventListener('click', (e) => {

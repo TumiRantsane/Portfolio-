@@ -884,9 +884,9 @@ body {
 .error-message {
   color: red;
   opacity: 0;
-  visibility: none;
+  visibility: hidden;
   transition: 0.2s ease-in;
-} 
+}
 
 .error-message.show {
   opacity: 1;
