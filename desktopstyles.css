@@ -156,7 +156,6 @@ body {
 }
 
 .btn {
-  form-validation
   animation-duration: 1.5s;
   transition: background 1.5s ease-in-out, color 1.5s ease-in-out;
 }
@@ -807,7 +806,7 @@ body {
   .modal__dsc__first {
     flex-basis: 60%;
   }
-  
+
   .modal__dsc__second {
     flex-basis: 40%;
   }
