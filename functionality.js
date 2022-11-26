@@ -5,7 +5,7 @@ import {
 import { createModal, projects } from './popupwindow.js';
 
 import {
-  isItUppercase, email, form, error,
+  isItUppercase, email, error,
 } from './validation.js';
 
 menuIconMobile.addEventListener('click', openMenu);
@@ -102,8 +102,6 @@ document.addEventListener('DOMContentLoaded', () => {
   closeIcon.addEventListener('click', closeModal);
 });
 
-//document.getElementById('form')
-//form.addEventListener
 document.getElementById('form').addEventListener('submit', (e) => {
   if (isItUppercase(email.value)) {
     error.textContent = '';
