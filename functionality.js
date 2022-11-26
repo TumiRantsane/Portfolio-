@@ -102,7 +102,9 @@ document.addEventListener('DOMContentLoaded', () => {
   closeIcon.addEventListener('click', closeModal);
 });
 
-form.addEventListener('submit', (e) => {
+//document.getElementById('form')
+//form.addEventListener
+document.getElementById('form').addEventListener('submit', (e) => {
   if (isItUppercase(email.value)) {
     error.textContent = '';
     email.style.border = '1px solid #cfd8dc';
