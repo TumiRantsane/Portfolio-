@@ -20,3 +20,17 @@ export const closeMenu = () => {
   menu.classList.remove('active');
   refreshIcon();
 };
+
+
+const formButton = document.querySelector('.form-button');
+
+formButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  const email = document.querySelector('.email').value;
+  const errorMessage = document.querySelector('.error-message');
+  if (email !== email.toLowerCase()) {
+    errorMessage.classList.add('show');
+  } else {
+    errorMessage.classList.remove('show');
+  }
+});
