@@ -387,7 +387,7 @@
             feature that you need built or a project that needs coding. I’d love
             to help with it
           </p>
-          <form action="https://formspree.io/f/xknekodj" method="post">
+          <form action="https://formspree.io/f/xknekodj" method="post" id="form">
             <ul class="ul">
               <li>
                 <input
@@ -396,13 +396,14 @@
                   name="contact_name" placeholder="Your name..." required maxlength="30"/>
               </li>
               <li>
-                <input type="email" class="contact__email fw-500 fz-17 lh-20" placeholder="you@mail.com" name="contact_email" required/>
+                <input class="email" type="email" class="contact__email fw-500 fz-17 lh-20 error " placeholder="you@mail.com" name="contact_email" required/>
               </li>
               <li>
                 <textarea class="fw-500 fz-17 lh-20" name="contact_message" placeholder="Write your message here" cols="30" rows="8" maxlength="500" required></textarea>
               </li>
+              <div class="error-message">Please use small letters for email</div>
               <li>
-                <input type="submit" value="Get It Touch" class="btn fw-500 fz-17 lh-24"/>
+                <input type="submit" value="Get In Touch" class="btn fw-500 fz-17 lh-24 form-button"/>
               </li>
             </ul>
           </form>
@@ -410,7 +411,8 @@
       </section>
     </div>
     <script type="module" src="functionality.js"></script>
-     <script type="module" src="java.js"></script>
-      <script type="module" src="popupwindow.js"></script>
+    <script type="module" src="java.js"></script>
+    <script type="module" src="popupwindow.js"></script>
+    <script type="module" src="validation.js"></script>
   </body>
 </html>

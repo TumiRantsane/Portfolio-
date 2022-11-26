@@ -4,6 +4,10 @@ import {
 
 import { createModal, projects } from './popupwindow.js';
 
+import {
+  isItUppercase, email, error,
+} from './validation.js';
+
 menuIconMobile.addEventListener('click', openMenu);
 menuLinks.forEach((menuLink) => {
   menuLink.addEventListener('click', closeMenu);
@@ -11,6 +15,7 @@ menuLinks.forEach((menuLink) => {
 
 document.addEventListener('DOMContentLoaded', () => {
   createModal();
+
   const buttonsProject = document.querySelectorAll('.works__card button');
   const closeIcon = document.querySelector('.closeModal');
   const modal = document.querySelector('.modal');
@@ -95,4 +100,15 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   closeIcon.addEventListener('click', closeModal);
+});
+
+document.getElementById('form').addEventListener('submit', (e) => {
+  if (isItUppercase(email.value)) {
+    error.textContent = '';
+    email.style.border = '1px solid #cfd8dc';
+  } else {
+    e.preventDefault();
+    email.style.border = '3px solid red';
+    error.textContent = 'X   Email should be in lowercase';
+  }
 });
